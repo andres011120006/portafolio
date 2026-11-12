@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Andrés Aguirre | Desarrollador de software</title>
+<meta name="description" content="Portafolio de Deimerson Andrés Aguirre Lesmes, estudiante de Ingeniería de Sistemas. APIs con Python y FastAPI, React, Docker y CI." />
+<meta name="theme-color" content="#ffffff" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Andrés Aguirre | Desarrollador de software" />
+<meta property="og:description" content="APIs con Python y FastAPI, React, Docker y CI. Proyectos con código abierto en GitHub." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232457F5'/%3E%3Cpath d='m9 16.5 4.5 4.5L23 11' fill='none' stroke='%23FFFFFF' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<a class="skip" href="#proyectos">Saltar al contenido</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Andrés Aguirre</a>
+    <nav aria-label="Principal"><ul>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#stack">Tecnologías</a></li>
+      <li><a href="#trayectoria">Trayectoria</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<div class="rail" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="avail"><i aria-hidden="true"></i>Disponible para prácticas y roles junior</span>
+      <h1>Hola, soy Andrés. Desarrollo APIs, interfaces y la infraestructura que las sostiene.</h1>
+      <p>Estudiante de Ingeniería de Sistemas en Bucaramanga. Construyo APIs con Python y FastAPI e interfaces con React, las empaqueto con Docker y las pruebo con CI. Mi base en redes Cisco me ayuda a entender cómo viaja cada petición.</p>
+      <div class="cta">
+        <a class="btn solid" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="https://github.com/andres011120006" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="CV_Deimerson_Aguirre_ATS_.pdf" download>Descargar CV</a>
+      </div>
+    </div>
+    <div class="topo-wrap"><svg class="topo" viewBox="0 0 520 420" role="img" aria-label="Diagrama: una API en el centro conectada con React, PostgreSQL, Docker, GitHub Actions y Cisco">
+      <g class="edge"><path d="M260 210 L100 70"/><path d="M260 210 L420 70"/><path d="M260 210 L90 330"/><path d="M260 210 L430 330"/><path d="M260 210 L260 375"/></g>
+      <g class="flow"><path d="M260 210 L100 70"/><path d="M260 210 L420 70"/><path d="M260 210 L90 330"/><path d="M260 210 L430 330"/><path d="M260 210 L260 375"/></g>
+      <a href="#proyectos" data-slide="0" aria-label="FastAPI: ver la API de detección de fraude"><g class="core"><rect x="195" y="182" width="130" height="56" rx="14"/><text x="260" y="216">FastAPI</text></g></a>
+      <a href="#proyectos" data-slide="1" aria-label="React: ver TaskFlow"><g><rect x="40" y="46" width="120" height="48" rx="12"/><text x="100" y="76">React</text></g></a>
+      <a href="#proyectos" data-slide="1" aria-label="PostgreSQL: ver TaskFlow"><g><rect x="350" y="46" width="140" height="48" rx="12"/><text x="420" y="76">PostgreSQL</text></g></a>
+      <a href="#proyectos" data-slide="0" aria-label="Docker: ver la API de detección de fraude"><g><rect x="30" y="306" width="120" height="48" rx="12"/><text x="90" y="336">Docker</text></g></a>
+      <a href="#proyectos" data-slide="0" aria-label="GitHub Actions: ver la API de detección de fraude"><g><rect x="360" y="306" width="140" height="48" rx="12"/><text x="430" y="336">GitHub Actions</text></g></a>
+      <g><rect x="205" y="351" width="110" height="48" rx="12"/><text x="260" y="381">Cisco</text></g>
+    </svg>
+      <p class="hint">Toca una tecnología para ver dónde la uso.</p></div>
+  </div>
+</div>
+
+<section id="proyectos">
+  <div class="wrap">
+    <h2>Proyectos</h2>
+    <p class="lead">Todo lo que ves aquí está en mi GitHub, con el código abierto.</p>
+
+    <div class="car" role="region" aria-roledescription="carrusel" aria-label="Proyectos">
+      <div class="viewport">
+        <div class="track" id="track">
+
+          <article class="slide hl" role="group" aria-roledescription="diapositiva" aria-label="1 de 5">
+            <div>
+              <span class="badge">Proyecto destacado</span>
+              <h3>API de detección de fraude transaccional</h3>
+              <p>API REST en tiempo real que puntúa cada transacción y responde según el nivel de riesgo. Valida los datos con Pydantic v2, usa un modelo RandomForest y se empaqueta en un contenedor Docker multi-stage listo para Google Cloud Run o AWS Lambda, con logs en JSON, medición de tiempo de respuesta y CI en GitHub Actions.</p>
+              <ul class="tags"><li>FastAPI</li><li>scikit-learn</li><li>Pydantic v2</li><li>Docker</li><li>Cloud Run</li><li>AWS Lambda</li><li>GitHub Actions</li></ul>
+              <div class="links"><a href="https://github.com/andres011120006/Api-Detectar-fraude-transaccional" target="_blank" rel="noopener">Ver código en GitHub</a></div>
+            </div>
+            <div class="risk" aria-label="Cómo decide la API según el risk_score">
+              <span class="ep">POST /v1/predict</span>
+              <p class="q">Cada transacción recibe un risk_score entre 0 y 1 y una decisión:</p>
+              <div class="bar" aria-hidden="true"><i class="a"></i><i class="f"></i><i class="r"></i></div>
+              <div class="scale" aria-hidden="true"><span>0</span><span>0.40</span><span>0.80</span></div>
+              <div class="tiers">
+                <div><i style="background:var(--ok)"></i><b>APPROVED</b> riesgo menor a 0.40</div>
+                <div><i style="background:var(--warn)"></i><b>FLAGGED</b> de 0.40 a 0.79, para revisión</div>
+                <div><i style="background:var(--bad)"></i><b>REJECTED</b> riesgo de 0.80 o más</div>
+              </div>
+            </div>
+            <ol class="pipeline" aria-label="Recorrido de una petición">
+              <li><span>Cliente</span></li><li><span>Cloud Run o Lambda</span></li><li><span>Validación con Pydantic</span></li><li><span>Modelo RandomForest</span></li><li><span>Decisión</span></li>
+              <li class="note">GitHub Actions ejecuta las pruebas y construye la imagen en cada push.</li>
+            </ol>
+          </article>
+
+          <article class="slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 5">
+            <div>
+              <h3>TaskFlow: gestor de tareas full-stack</h3>
+              <p>Aplicación con registro e inicio de sesión (JWT), tareas privadas por usuario, filtros, búsqueda y edición. La API tiene 8 pruebas con pytest y un pipeline de CI en cada push.</p>
+              <ul class="tags"><li>React</li><li>FastAPI</li><li>PostgreSQL</li><li>JWT</li><li>pytest</li><li>GitHub Actions</li></ul>
+              <div class="links">
+                <a href="https://github.com/andres011120006/taskflow" target="_blank" rel="noopener">Ver código en GitHub</a>
+              </div>
+            </div>
+            <div class="shots fit">
+              <img class="s1" src="assets/login.png" alt="Pantalla de inicio de sesión de TaskFlow" loading="lazy" onerror="this.remove()" />
+              <img class="s2" src="assets/tareas.png" alt="Panel de tareas de TaskFlow" loading="lazy" onerror="this.remove()" />
+            </div>
+          </article>
+
+          <article class="slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 5">
+            <div>
+              <h3>Sistema de préstamo de equipos y salas</h3>
+              <p>Proyecto integrador de 4.º semestre: un sistema para gestionar el préstamo de equipos audiovisuales y salas de informática en una universidad, desde la solicitud y aprobación hasta la devolución, sanciones y mantenimiento. Incluye diagramas UML, modelado de base de datos y diseño de interfaces.</p>
+              <ul class="tags"><li>Java</li><li>Oracle</li><li>UML</li><li>Modelado de datos</li></ul>
+              <div class="links">
+                <a href="https://github.com/andres011120006/ProyectoIntegradorUDI" target="_blank" rel="noopener">Documentación y diseño</a>
+                <a href="https://github.com/andres011120006/proyecto-integrador" target="_blank" rel="noopener">Implementación</a>
+              </div>
+            </div>
+            <div class="shots">
+              <img class="s1" src="https://raw.githubusercontent.com/andres011120006/ProyectoIntegradorUDI/main/img/interfaces/Interfaz2PanelUsuario.png" alt="Panel de usuario del sistema de préstamos" loading="lazy" onerror="this.remove()" />
+              <img class="s2" src="https://raw.githubusercontent.com/andres011120006/ProyectoIntegradorUDI/main/img/interfaces/Interfaz1Login.png" alt="Pantalla de inicio de sesión del sistema de préstamos" loading="lazy" onerror="this.remove()" />
+            </div>
+          </article>
+
+          <article class="slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 5">
+            <div>
+              <h3>Inventario Forestal Nacional: frontend</h3>
+              <p>Interfaz web de un software para el Inventario Forestal Nacional (IFN), desarrollada para el proyecto integrador de 5.º semestre.</p>
+              <ul class="tags"><li>JavaScript</li><li>Frontend</li></ul>
+              <div class="links"><a href="https://github.com/andres011120006/Proyecto-_integrador_5_semestre_-frontend" target="_blank" rel="noopener">Ver código en GitHub</a></div>
+            </div>
+            <div class="shot"><img src="assets/Ideam.png" alt="Pantalla del frontend del Inventario Forestal Nacional" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Captura del Inventario Forestal'}))" /></div>
+          </article>
+
+          <article class="slide" role="group" aria-roledescription="diapositiva" aria-label="5 de 5">
+            <div>
+              <h3>CRUD básico con PHP y Tablar</h3>
+              <p>Ejercicio de CRUD básico con la librería Tablar: crear, leer, actualizar y eliminar registros.</p>
+              <ul class="tags"><li>PHP</li><li>CRUD</li><li>Tablar</li></ul>
+              <div class="links"><a href="https://github.com/andres011120006/ejercicio-tablar" target="_blank" rel="noopener">Ver código en GitHub</a></div>
+            </div>
+            <svg class="art" viewBox="0 0 480 300" role="img" aria-label="Las cuatro operaciones de un CRUD: crear, leer, actualizar y eliminar">
+              <rect width="480" height="300" rx="12" fill="#EEF3FB"/>
+              <g fill="#FFFFFF" stroke="#CBD8F2"><rect x="40" y="36" width="190" height="104" rx="14"/><rect x="250" y="36" width="190" height="104" rx="14"/><rect x="40" y="160" width="190" height="104" rx="14"/><rect x="250" y="160" width="190" height="104" rx="14"/></g>
+              <g stroke="#2457F5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <path d="M135 62v34M118 79h34"/>
+                <path d="M320 72h50M320 88h50M320 104h30"/>
+                <path d="M110 200l34 34M104 236l8-3 32-32-5-5-32 32z"/>
+                <path d="M325 196h40M333 196v-6h24v6M331 196l3 38h22l3-38"/>
+              </g>
+              <g fill="#0B1220" font-size="16" font-weight="700" text-anchor="middle"><text x="135" y="126">Crear</text><text x="345" y="126">Leer</text><text x="135" y="250">Actualizar</text><text x="345" y="250">Eliminar</text></g>
+            </svg>
+          </article>
+
+        </div>
+      </div>
+      <div class="ctrl">
+        <div class="dots" id="dots"></div>
+        <div class="btns">
+          <button type="button" id="prev" aria-label="Proyecto anterior">Anterior</button>
+          <button type="button" id="play" aria-label="Pausar rotación automática">Pausar</button>
+          <button type="button" id="next" aria-label="Proyecto siguiente">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about">
+    <!-- Para poner tu foto: guarda una imagen llamada Fotoperfil.png junto a este html (recomendado 800x1000 px). -->
+    <div class="photo-wrap"><div class="photo">
+      <span class="ini" aria-hidden="true">AA</span>
+      <img src="assets/Fotoperfil.png" alt="Foto de Andrés Aguirre" loading="lazy" onerror="this.remove()" />
+    </div></div>
+    <div>
+      <h2>Sobre mí</h2>
+      <p class="lead">Soy de Bucaramanga y estudio Ingeniería de Sistemas en la UDI. Trabajo asesorando clientes, y eso me enseñó a escuchar el problema antes de proponer una solución. Esa misma costumbre la llevo al código.</p>
+      <ul class="princ">
+        <li><strong>Valido las entradas</strong><span>La API de fraude revisa cada dato con Pydantic antes de procesarlo.</span></li>
+        <li><strong>Pruebo lo que importa</strong><span>TaskFlow tiene 8 pruebas, incluida la que confirma que un usuario no ve los datos de otro.</span></li>
+        <li><strong>Automatizo con CI</strong><span>Cada push ejecuta pruebas y compilación en GitHub Actions.</span></li>
+        <li><strong>Empaqueto con Docker</strong><span>Para que el proyecto corra igual en mi equipo, en el CI y en la nube.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="stack">
+  <div class="wrap">
+    <h2>Tecnologías</h2>
+    <p class="lead">Con lo que trabajo y lo que he usado en mis proyectos.</p>
+    <dl class="grid2">
+      <div><dt>Lenguajes</dt><dd>Python, JavaScript, PHP, C++, SQL</dd></div>
+      <div><dt>Frontend</dt><dd>React, Vite, HTML, CSS</dd></div>
+      <div><dt>Backend y APIs</dt><dd>FastAPI, APIs REST, JWT, SQLAlchemy</dd></div>
+      <div><dt>Datos</dt><dd>PostgreSQL, NoSQL, Pandas, NumPy, scikit-learn</dd></div>
+      <div><dt>DevOps</dt><dd>Docker, Docker Compose, Git, GitHub Actions, Nginx</dd></div>
+      <div><dt>Redes e infraestructura</dt><dd>Cisco Packet Tracer, NAT, ACL, Linux, Slurm</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="trayectoria">
+  <div class="wrap">
+    <h2>Trayectoria</h2>
+    <div class="cols">
+      <div>
+        <h3 class="sub">Experiencia</h3>
+        <ul class="tl">
+          <li><time>Mediados de 2025 – Presente</time><strong>Asesor de Atención al Cliente</strong><span>Surtidotaciones Glodi. Atención, resolución de inquietudes y recomendación de productos.</span></li>
+          <li><time>2024 – Mediados de 2025</time><strong>Vidriero</strong><span>Vidriería. Medición, corte e instalación de vidrio y atención a clientes.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub">Educación e idiomas</h3>
+        <ul class="tl">
+          <li><time>2023 – Presente</time><strong>Ingeniería de Sistemas, 7.º semestre</strong><span>Universidad de Investigación y Desarrollo (UDI)</span></li>
+          <li><time>Idiomas</time><strong>Español nativo, inglés B1</strong><span>Nivel intermedio.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <div class="wrap">
+    <h2>Busco mi primera posición en tecnología.</h2>
+    <p>Abierto a prácticas y roles junior en desarrollo backend y de software. Escríbeme y te respondo pronto.</p>
+    <div class="cta">
+      <a class="btn solid" href="mailto:andresaguirrel1112@gmail.com">andresaguirrel1112@gmail.com</a>
+      <a class="btn" href="https://github.com/andres011120006" target="_blank" rel="noopener">github.com/andres011120006</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Deimerson Andrés Aguirre Lesmes. Bucaramanga, Colombia.</div></footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>
